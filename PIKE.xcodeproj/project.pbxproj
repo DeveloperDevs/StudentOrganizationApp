@@ -36,9 +36,19 @@
 		03EAE3FD1E179061000DEB2A /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EAE3FC1E179061000DEB2A /* EventDetail.swift */; };
 		3E0A300320C78B4100CF87B4 /* ImageLoadExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A300220C78B4100CF87B4 /* ImageLoadExtention.swift */; };
 		3E2D8D0820B615470075BAE5 /* SetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2D8D0720B615470075BAE5 /* SetUp.swift */; };
-		6E62E7B0104BB3B8B01AEA38 /* Pods_FetchCoins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9369D598B6C03D8CEEB04DE /* Pods_FetchCoins.framework */; };
+		70CDD24623BAFF72002378F4 /* PIKETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CDD24523BAFF72002378F4 /* PIKETests.swift */; };
 		8958B9B56AE0F9A38DEED4D1 /* Pods_PIKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F32A03492C4855862093E15 /* Pods_PIKE.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70CDD24823BAFF72002378F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0334FC681DBAB737009575D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0334FC6F1DBAB738009575D7;
+			remoteInfo = PIKE;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0332763A2088E48D007BF774 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -76,6 +86,9 @@
 		3E0A300220C78B4100CF87B4 /* ImageLoadExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadExtention.swift; sourceTree = "<group>"; };
 		3E2D8D0720B615470075BAE5 /* SetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUp.swift; sourceTree = "<group>"; };
 		3EEEE59C2F1693A707C81A53 /* Pods-PIKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIKE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PIKE/Pods-PIKE.debug.xcconfig"; sourceTree = "<group>"; };
+		70CDD24323BAFF72002378F4 /* PIKETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIKETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CDD24523BAFF72002378F4 /* PIKETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIKETests.swift; sourceTree = "<group>"; };
+		70CDD24723BAFF72002378F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5875E8F368A04926F36607 /* Pods-FetchCoins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchCoins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchCoins/Pods-FetchCoins.debug.xcconfig"; sourceTree = "<group>"; };
 		A9369D598B6C03D8CEEB04DE /* Pods_FetchCoins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchCoins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA74D57B95B05A16E859C543 /* Pods-FetchCoins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchCoins.release.xcconfig"; path = "Pods/Target Support Files/Pods-FetchCoins/Pods-FetchCoins.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,8 +100,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0334FC871DBABA3A009575D7 /* CloudKit.framework in Frameworks */,
-				6E62E7B0104BB3B8B01AEA38 /* Pods_FetchCoins.framework in Frameworks */,
 				8958B9B56AE0F9A38DEED4D1 /* Pods_PIKE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CDD24023BAFF72002378F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +119,7 @@
 			children = (
 				0334FC861DBABA3A009575D7 /* CloudKit.framework */,
 				0334FC721DBAB738009575D7 /* PIKE */,
+				70CDD24423BAFF72002378F4 /* PIKETests */,
 				0334FC711DBAB738009575D7 /* Products */,
 				40980918500F91F819B95895 /* Pods */,
 				2FD5D530BDBA2C5340C01A5E /* Frameworks */,
@@ -110,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0334FC701DBAB738009575D7 /* PIKE.app */,
+				70CDD24323BAFF72002378F4 /* PIKETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +200,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		70CDD24423BAFF72002378F4 /* PIKETests */ = {
+			isa = PBXGroup;
+			children = (
+				70CDD24523BAFF72002378F4 /* PIKETests.swift */,
+				70CDD24723BAFF72002378F4 /* Info.plist */,
+			);
+			path = PIKETests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,13 +231,31 @@
 			productReference = 0334FC701DBAB738009575D7 /* PIKE.app */;
 			productType = "com.apple.product-type.application";
 		};
+		70CDD24223BAFF72002378F4 /* PIKETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70CDD24C23BAFF72002378F4 /* Build configuration list for PBXNativeTarget "PIKETests" */;
+			buildPhases = (
+				70CDD23F23BAFF72002378F4 /* Sources */,
+				70CDD24023BAFF72002378F4 /* Frameworks */,
+				70CDD24123BAFF72002378F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70CDD24923BAFF72002378F4 /* PBXTargetDependency */,
+			);
+			name = PIKETests;
+			productName = PIKETests;
+			productReference = 70CDD24323BAFF72002378F4 /* PIKETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0334FC681DBAB737009575D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Devin Lee";
 				TargetAttributes = {
@@ -228,6 +276,11 @@
 							};
 						};
 					};
+					70CDD24223BAFF72002378F4 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0334FC6F1DBAB738009575D7;
+					};
 				};
 			};
 			buildConfigurationList = 0334FC6B1DBAB737009575D7 /* Build configuration list for PBXProject "PIKE" */;
@@ -244,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				0334FC6F1DBAB738009575D7 /* PIKE */,
+				70CDD24223BAFF72002378F4 /* PIKETests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +312,13 @@
 				038422D5209716BF004CF150 /* GoogleService-Info.plist in Resources */,
 				0334FC7B1DBAB738009575D7 /* Assets.xcassets in Resources */,
 				0334FC791DBAB738009575D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CDD24123BAFF72002378F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +400,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70CDD23F23BAFF72002378F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CDD24623BAFF72002378F4 /* PIKETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70CDD24923BAFF72002378F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0334FC6F1DBAB738009575D7 /* PIKE */;
+			targetProxy = 70CDD24823BAFF72002378F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0334FC771DBAB738009575D7 /* Main.storyboard */ = {
@@ -509,6 +586,58 @@
 			};
 			name = Release;
 		};
+		70CDD24A23BAFF72002378F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XAD92FH5HF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PIKETests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinlee.PIKETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIKE.app/PIKE";
+			};
+			name = Debug;
+		};
+		70CDD24B23BAFF72002378F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XAD92FH5HF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PIKETests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinlee.PIKETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIKE.app/PIKE";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +655,15 @@
 			buildConfigurations = (
 				0334FC831DBAB738009575D7 /* Debug */,
 				0334FC841DBAB738009575D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70CDD24C23BAFF72002378F4 /* Build configuration list for PBXNativeTarget "PIKETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CDD24A23BAFF72002378F4 /* Debug */,
+				70CDD24B23BAFF72002378F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
