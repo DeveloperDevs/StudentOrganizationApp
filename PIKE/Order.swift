@@ -51,4 +51,12 @@ struct Order {
         return ["name" : name, "size" : size, "quantity": quantity]
     }
     
+    func testFun() -> Bool {
+        if Int(size) ?? -1 > 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 }

@@ -10,4 +10,12 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
 
+target 'PIKETests' do
+	inherit! :search_paths
+	pod 'Firebase'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
+	pod 'Firebase/Storage'
+end
+
 end
