@@ -14,6 +14,8 @@ class PIKETests: XCTestCase {
     func testExample() {
         let order = Order(name: "One", size: "5", quantity: "7")
         XCTAssert(order.testFun())
+        let order2 = Order(name: "One", size: "-5", quantity: "-7")
+        XCTAssert(order2.testFun())
     }
 
 }
