@@ -59,4 +59,44 @@ struct Order {
         }
     }
     
+    func dupeTestFun() -> Bool {
+        if Int(size) ?? -1 > 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func overlyComplicatedTestFun() -> Bool {
+        if Int(size) ?? -1 > 0 {
+            return true
+        } else {
+            if Int(size) ?? -1 > 0 {
+                return true
+            } else {
+                if Int(size) ?? -1 > 0 {
+                    return true
+                } else {
+                    if Int(size) ?? -1 > 0 {
+                        return true
+                    } else {
+                        if Int(size) ?? -1 > 0 {
+                            return true
+                        } else {
+                            if Int(size) ?? -1 > 0 {
+                                return true
+                            } else {
+                                if Int(size) ?? -1 > 0 {
+                                    return true
+                                } else {
+                                    return false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
